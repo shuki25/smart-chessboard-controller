@@ -4658,7 +4658,7 @@
     (effects (font (size 1.5 1.5) italic) (justify right bottom))
     (uuid 80f5698a-f23d-4b7f-809e-fad6568fa586)
   )
-  (text "White Move Button" (at 311.15 44.45 0)
+  (text "Black Move Button" (at 311.15 44.45 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 87dcd367-0836-4e89-8e7c-ea9fe537f450)
   )
