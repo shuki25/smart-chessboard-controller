@@ -406,8 +406,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "3d-models/smart-chessboard-controller.step",
+      "vrml": "smart-chessboard-controller.wrl"
     },
     "page_layout_descr_file": ""
   },
