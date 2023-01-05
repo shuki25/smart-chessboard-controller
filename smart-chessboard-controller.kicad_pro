@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.09999999999999999,
@@ -55,7 +56,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "shorting_items|155668000|64870000|f459687a-618b-42aa-9452-733a5e8bed49|5a94afa4-738d-489b-b964-c4ebfc8892bd",
+        "shorting_items|155668000|65670000|c183d098-1b65-4034-aea6-61d51ecaaa99|88737150-442f-4630-9036-d7376bc75a60",
+        "shorting_items|155668000|70470000|bcf3f74e-cf5e-45b6-8ccf-becb5e48ab75|277025e1-9fef-4393-8adc-8296312720c7",
+        "shorting_items|155668000|71270000|de216d58-2be2-4486-8f24-1b181dae6275|8a19c715-8e4b-46b4-96f2-b6f540eb001a"
+      ],
       "meta": {
         "version": 2
       },
@@ -104,20 +110,65 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.127,
+        "min_connection": 0.0,
         "min_copper_edge_clearance": 0.19999999999999998,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
+        "min_text_height": 0.7999999999999999,
+        "min_text_thickness": 0.12,
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.127,
         "min_via_annular_width": 0.13,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
+      "teardrop_options": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_on_pad_in_zone": false,
+          "td_onpadsmd": true,
+          "td_onroundshapesonly": false,
+          "td_ontrackend": false,
+          "td_onviapad": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
       "track_widths": [
         0.0,
         0.2,
@@ -138,7 +189,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -398,7 +450,9 @@
     "meta": {
       "version": 2
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -414,6 +468,8 @@
   "schematic": {
     "annotate_start_num": 0,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
@@ -446,6 +502,8 @@
     "plot_directory": "pdf/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },

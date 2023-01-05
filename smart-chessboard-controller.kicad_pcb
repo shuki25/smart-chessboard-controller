@@ -65,6 +65,7 @@
       (dielectric_constraints no)
     )
     (pad_to_mask_clearance 0)
+    (pad_to_paste_clearance -0.04)
     (aux_axis_origin 73.66 53.34)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
@@ -3377,7 +3378,7 @@
     )
   )
 
-  (footprint "Symbol:KiCad-Logo2_6mm_SilkScreen" (layer "F.Cu")
+  (footprint "Symbol:KiCad-Logo2_6mm_SilkScreen" locked (layer "F.Cu")
     (tedit 0) (tstamp d4359db0-e4f2-437a-887e-373cb7707c7e)
     (at 129.794 85.471)
     (descr "KiCad Logo")
