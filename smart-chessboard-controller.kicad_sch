@@ -5387,7 +5387,7 @@
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 41.91 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C167321" (id 4) (at 38.1 48.26 0)
+    (property "LCSC" "C2982555" (id 4) (at 38.1 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "A1" (uuid 78b91720-4c03-4bec-97b1-d13b10c9ec02))
